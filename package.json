@@ -1,5 +1,6 @@
 {
   "name": "prince",
+  "homepage": "https://Princeprymus09.github.io/hotelBookingApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "antd": "^4.16.11",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
+    "gh-pages": "^5.0.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -21,6 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
